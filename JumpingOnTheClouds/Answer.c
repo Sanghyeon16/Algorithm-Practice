@@ -24,12 +24,9 @@ int main()
 		if(c[curLoc + 1] == 1)
 			curLoc += 2;
 		else if((curLoc+2>=n)||(c[curLoc+2] == 1))
-			{
-				curLoc += 1;
-			}
+			curLoc += 1;
 		else
 			curLoc += 2;
-		}
 		
 		jump += 1;
 		printf("current path: %d\n",curLoc);
