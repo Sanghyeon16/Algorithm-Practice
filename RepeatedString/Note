@@ -1,0 +1,9 @@
+The first way I had tried was to make repeated string.
+It worked well only if the input size is small.
+In this way a lot of memory waste will happen when the input size is large.
+
+I just should had to think an effiecent way before starting it.
+
+1. Goal
+2. Memory
+3. Complexity
