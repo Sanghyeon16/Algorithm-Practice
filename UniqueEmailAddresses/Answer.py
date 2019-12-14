@@ -1,9 +1,17 @@
 class Solution(object):
-    def licenseKeyFormatting(self, S, K):
+    def numUniqueEmails(self, emails):
         """
-        :type S: str
-        :type K: int
-        :rtype: str
+        :type emails: List[str]
+        :rtype: int
         """
-        S = S.replace('-','').upper()[::-1]
-        return '-'.join(S[i:i+K] for i in range(0, len(S), K))[::-1]
+        seen = set()
+        for email in emails:
+            local, domain = email.split('@')
+            if '+' in local:
+                local = local[:local.index('+')]
+            seen.add(local.replace('.','')+'@'+domain)
+        return len(seen)
+    
+        
+            
+        
